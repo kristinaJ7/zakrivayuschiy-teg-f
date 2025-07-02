@@ -1,1 +1,52 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+/*Шрифты*/
+  --font-family-accent: 'PressStart2P', sans-serif;
+  --font-family-main: 'Inter',sans-serif;
+/*начертание*/
+   --font-weight-main: 400;
+   --font-weight-accent: 700;
+   --font-weight-text: 400;
+   --font-weight-title: 700;
+   --wght-text: 400;
+   --wght-title:700;
+/*размер шрифта*/
+   --font-size-main:1.125rem ; /*текст в карточках*/
+   --font-size-big: 4.125rem ; /* заголовок в хедере*/
+   --font-size-small: 1.4375rem; /*подзаголовок*/
+   --font-size-button:0.875rem ; /*для кнопок*/
+   --font-size-mobile:0.875rem ;
+   --font-size-label: 0.875rem;
+/*ширина header*/
+   --mobile-width: 100%;
+   --header-desktop-width:  clamp(371px, 371px + 3.25vw, 696px);
+   --card__desktop-width: clamp(375px, 49.5vw + 189px, 696px); 
+   --min-width:375px;
+   --max-width:696px;
+   --min-width-card:375px;
+   --max-width-card:696px;
+/*градиент фона */
+   --bg-image: 
+  repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0 2px,  transparent 2px 4px),
+  linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+  /*цвета*/
+ --accent-color: #000000;
+/*цвет анимаций*/
+  --color-main-body: #FF0000;
+  --color-contour:#000000;
+  --animation-fill-color:#FF0000;
+/*границы*/
+  --border: 2px solid  #000000;
+  --color-outline-label:#ffffff;
+
+  --text-shadow-label:
+  -1px -1px 0 var(--color-outline-label,#ffffff),
+  1px -1px 0 var(--color-outline-label,#ffffff),
+  -1px 1px 0 var(--color-outline-label,#ffffff),
+  1px 1px 0 var(--color-outline-label,#ffffff);
+}
+
+
+
+

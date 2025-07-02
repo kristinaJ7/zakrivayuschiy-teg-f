@@ -9,3 +9,123 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+/*Анимация масштабирования сердца */
+@keyframes is-liked {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+  /*обратный масштаб*/
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*Анимация искр*/
+@keyframes sparkles {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Масштабирование сердца*/
+.like-icon.is-liked .heart {
+  animation: is-liked 0.3s ease-in 0.1s forwards; 
+}
+/*появление искр*/
+.like-icon.is-liked .sparks{
+ animation: sparkles 0.3s ease-in 0.3s forwards;
+}
+/*КНОПКА СЕРДЦА*/
+/*при фокусе обводка*/
+.card__icon-button:focus{
+  border: none;
+  outline: none;
+}
+.card__icon-button:focus-visible{
+  border: 2px solid var( --accent-color, #000000);
+  transition: 0.3s ease;
+}
+/*ЗАЛИВКА ПРИ НАВЕДЕНИИ*/
+/*заливка сердцевины*/
+.like-icon:hover .core {
+  fill: var(--accent-color, #000000); 
+  transition: fill 0.3s ease 0.03s;
+}
+/*заливка основного тела*/
+ .like-icon:hover .main-body  {
+  fill: var(--accent-color, #000000);
+  transition: fill 0.3s ease 0.05s; 
+}
+.core{
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s; 
+}
+/*АНИМИРУЕТСЯ ПРИ АКТИВНОСТИ*/
+/*анимация сердцевины*/
+/* Состояние :active */
+.like-icon:active .core {
+fill: var(--animation-fill-color, #FF0000);
+transition: fill 0.3 ease 0.3s;
+}
+/*основное тело при активности*/
+.like-icon:active .main-body {
+fill: var(--animation-fill-color, #FF0000);
+transition: fill 0.3s ease 0.05s;
+}
+/*сердцевина при клике*/
+.like-icon.is-liked .core{
+ fill: var(--animation-fill-color);
+}
+/*главное тело при клике*/
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+}
+/*контуринг при клике*/
+.like-icon.is-liked .contour{
+ fill: var(--animation-fill-color);
+}
+/*контур возвращался обратно при выключении сердечка*/
+.like-icon.is-liked .contour {
+transition: fill 0.1s linear;
+}
+/*Кнопка лайк*/
+.card__like-button{
+ position: relative;
+}
+.card__like-button:focus{
+ outline: none;
+ box-shadow: 2px 2px 0px 0px var(--accent-color, #000000);
+ transition: box-shadow 0.3s ease;
+}
+.card__like-button::before{
+ content: '';
+ position: absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background-color: var(--accent-color, #000000);
+ transform: scaleX(0);
+ transform-origin: left;
+ transition:0.5s ease-in-out;
+}
+.card__like-button:hover::before,
+.card__like-button:focus::before{
+ transform: scaleX(1);
+}
+.button__text{
+ position: relative;
+ mix-blend-mode: difference; 
+ color: #ffffff;
+}
