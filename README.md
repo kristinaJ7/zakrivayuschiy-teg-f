@@ -17,3 +17,6 @@
 
 ## Примечания
 Проект создан исключительно для  обучения.
+
+
+ https://kristinaj7.github.io/zakrivayuschiy-teg-f/
