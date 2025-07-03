@@ -99,16 +99,16 @@ transition: fill 0.3s ease 0.05s;
 .like-icon.is-liked .contour {
 transition: fill 0.1s linear;
 }
-/*Кнопка лайк*/
-.card__like-button{
+/*Кнопки при фокусе и ховере*/
+.button{
  position: relative;
 }
-.card__like-button:focus{
+.button:focus{
  outline: none;
  box-shadow: 2px 2px 0px 0px var(--accent-color, #000000);
  transition: box-shadow 0.3s ease;
 }
-.card__like-button::before{
+.button::before{
  content: '';
  position: absolute;
  top:0;
@@ -120,12 +120,22 @@ transition: fill 0.1s linear;
  transform-origin: left;
  transition:0.5s ease-in-out;
 }
-.card__like-button:hover::before,
-.card__like-button:focus::before{
+.button:hover::before,
+.button:focus::before{
  transform: scaleX(1);
 }
-.button__text{
+.button__text,.button__dialog_text{
  position: relative;
  mix-blend-mode: difference; 
  color: #ffffff;
 }
+.button:hover svg {
+  filter: brightness(0) invert(1);
+}
+
+
+
+
+
+
+
