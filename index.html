@@ -343,18 +343,16 @@
         </li>
       </ul>
     </section>
-    <section class="dialog-conteiner">
+    <div class="dialog-conteiner">
       <button class="button button__dialog_conteiner" aria-controls="dialog-id"
         onclick="window['dialog-id'].showModal();" type="button">
-        <div class="button-content">
-          <svg width="21" height="21" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <span class="button__text button__text_dialog">Сохранить на память</span>
+        <svg width="21" height="21" viewBox="0 0 40 40">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text button__text_dialog">Сохранить на память</span>
       </button>
-      </div>
-    </section>
-    <dialog id="dialog-id" aria-labelledby="dialog-title" class="dialog">
+    </div>
+    <dialog id="dialog-id" class="dialog">
       <div class="blok__wrapper">
         <svg width="40" height="40" viewBox="0 0 40 40">
           <use href="./svg/floppy.svg#floppy"></use>
@@ -372,6 +370,3 @@
 </body>
 
 </html>
-
-
-
