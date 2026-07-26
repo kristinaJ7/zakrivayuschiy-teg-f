@@ -6,19 +6,19 @@
 <img width="1440" height="9042" alt="Desktop" src="https://github.com/user-attachments/assets/dfde17dc-b43b-4e7a-95e2-d8fa08006399" />
 
 
-## Цели проекта:
-- Практика HTML/CSS
-- Отработка навыков верстки
-- Изучение современных подходов к вёрстке
+## Project Goals
+- Practice HTML/CSS implementation.
+- Refine layout skills.
+- Explore modern layout approaches.
 
-
-## Технологии:
+## Technologies
 - HTML5
 - CSS3
-- Flexbox/Grid
+- Flexbox / Grid
 
-## Примечания
-Проект создан исключительно для  обучения.
+## Notes
+This project was created for educational purposes only.
+
 
 
  https://kristinaj7.github.io/zakrivayuschiy-teg-f/
